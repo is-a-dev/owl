@@ -19,4 +19,4 @@ RUN npm install
 COPY . /usr/src/site
 
 # Start me!
-CMD ["node", "."]
+CMD ["npm", "start"]
