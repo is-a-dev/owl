@@ -1,14 +1,14 @@
 {
-  "name": "owlv3",
+  "name": "owl",
   "version": "1.0.0",
-  "description": "An attempt to remove users personal info from Public",
+  "description": "Securing user privacy by converting their data into a secure format.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",

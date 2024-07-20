@@ -11,7 +11,7 @@
 <body>
 <div class="min-h-screen bg-gray-900 flex justify-center items-center">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 class="text-3xl mb-6 flex items-center justify-center"><i class="fas fa-sign-in-alt mr-2"></i> DATA SERVICE</h1> <!-- Use Font Awesome icon -->
+        <h1 class="text-3xl mb-6 flex items-center justify-center"><i class="fas fa-sign-in-alt mr-2"></i> Data Service</h1> <!-- Use Font Awesome icon -->
 
         <% if (message && message.length > 0) { %>
             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
@@ -20,11 +20,11 @@
             </div>
         <% } %>
 
-        <h2 class="mb-4">This is your unique ID for both Is-a.dev and Open-Domains</h2>
+        <h2 class="mb-4">This is your unique ID for both is-a.dev and Open Domains.</h2>
         <textarea class="w-full h-64 p-2 border border-gray-300 rounded" id="data" name="data" disabled><%= token %></textarea>
         <hr class="my-6">
 
-        <p class="text-gray-700 text-center">© OPEN-DOMAINS & IS-A.DEV</p>
+        <p class="text-gray-700 text-center">&copy; <script>document.write(new Date().getFullYear())</script> is-a.dev & Open Domains</p>
     </div>
 </div>
 </body>
