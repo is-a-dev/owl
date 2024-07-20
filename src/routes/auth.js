@@ -6,7 +6,6 @@ const fetch = require("node-fetch");
 
 module.exports = async (req, res) => {
     const code = req.query.code;
-    const GITHUB_ID = process.env.GITHUB_ID;
 
     if (!code) {
         return res.status(400).json({ error: "No code provided" });
