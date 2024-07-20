@@ -5,5 +5,9 @@ module.exports = async (req, res) => {
     const emails = user.emails;
     const message = 'test message';
 
-    return res.render("profile", { username, user_id, emails, message, error: false, user: user });
+    let filteredEmails = emails.filter(function(e) {
+        return e.verified && !e.email.endsWith("@users.noreply.github.com");
+    })
+
+    return res.render("profile", { username, user_id, emails: filteredEmails, message, error: false, user: user });
 }

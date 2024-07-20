@@ -38,7 +38,11 @@ async function authenticateGithub(code) {
         },
     );
 
-    const emails = await emailResponse.json();
+    let emails = await emailResponse.json();
+
+    emails = emails.filter(function(e) {
+        return e.verified && !e.email.endsWith("@users.noreply.github.com");
+    });
 
     return { username, user_id, emails };
 }
