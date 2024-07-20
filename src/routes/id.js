@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
     }
 
     const data = { user_id, username, email };
-    const token = await EncryptData(data, user_id);
+    const token = await EncryptData(data);
 
     res.render("id", { message: "", token });
 
