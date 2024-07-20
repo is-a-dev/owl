@@ -3,7 +3,7 @@ module.exports = async (req, res) => {
     const username = user.username;
     const user_id = user.user_id;
     const emails = user.emails;
-    const message = 'test message';
+    const message = '';
 
     let filteredEmails = emails.filter(function(e) {
         return e.verified && !e.email.endsWith("@users.noreply.github.com");
