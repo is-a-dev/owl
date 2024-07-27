@@ -1,4 +1,4 @@
-const { EncryptData, DecryptData } = require("../util/idGen");
+const { EncryptPayload, DecryptPayload } = require("../util/idGen");
 
 module.exports = async (req, res) => {
     const username = req.params.username;
@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
     }
 
     const data = { user_id, username, email };
-    const token = await EncryptData(data, user_id);
+    const token = await EncryptPayload(data);
 
     res.render("id", { message: "", token });
 
