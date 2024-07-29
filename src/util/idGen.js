@@ -3,7 +3,7 @@ const jose = require('node-jose');
 
 async function EncryptPayload(payload) {
     // Read the PEM file
-    const pem = fs.readFileSync('keys/private.pem', 'utf8');
+    const pem = fs.readFileSync('/keys/private_key.pem', 'utf8');
     const JSONPayload = JSON.stringify(payload);
 
     // Create a keystore
