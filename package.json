@@ -4,7 +4,7 @@
   "description": "Securing user privacy by converting their data into a secure format.",
   "main": "src/index.js",
   "scripts": {
-    "start": "npm start"
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
